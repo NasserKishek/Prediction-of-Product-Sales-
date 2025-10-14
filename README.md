@@ -30,12 +30,27 @@ The problem is that retailers often lack clarity on which products sell best and
 
 ### Results:
 
-<img width="723" height="528" alt="HeatMap" src="https://github.com/user-attachments/assets/d03d2955-79c4-44a9-85b2-b3e44ee06674" />
-The image above (Heatmap) shows us that Item_MRP and Item_Outlet_Sales has the strongest correlation (0.54) and it is moderately positive and this relationship, indicates that when the MRP increases the sales tend to increase. This could be because higher MRP items are more appealing, of higher quality, or because MRP reflects bundled or premium products.
+<img width="589" height="390" alt="OT vs OS" src="https://github.com/user-attachments/assets/28f60670-7880-4ced-be3b-2434bade3689" />
 
-<img width="1014" height="562" alt="Cat-cols" src="https://github.com/user-attachments/assets/0cb045a0-9eaf-4123-83ec-64030ef8d5ef" />
-The chart above clearly shows that Supermarket Type1 is by far the most common outlet type in the dataset, with over 5,500 record.
-Also The majority of products are categorized as Low Fat, indicating a trend toward health-conscious labeling or consumer preferences.
+**Key Insights:**
+- Supermarket Type 3 has the highest sales, this means larger or more modern supermarkets generate stronger sales, so investing in these outlets or replicating their model could be more profitable.
+- Grocery Stores perform the worst, which shows smaller outlets struggle to generate significant sales. Retailers may need to improve grocery with better product mix or promotions.
+
+
+<img width="558" height="393" alt="MRP vs OS" src="https://github.com/user-attachments/assets/5f6eab7e-d1f4-4400-9924-a818680ef4dd" />
+
+**Key Insights:**
+- Higher MRP products generally generate higher sales, this means expensive items often bring in more revenue per product, likely because their higher price directly increases sales value.
+- There is still wide variation at each price level, this shows that not all expensive products sell well. Pricing alone doesn’t guarantee strong sales — demand and product type also matter.
+- The moderate correlation (0.57) suggests price is important, but not the only driver, This means while pricing has a big influence, other factors like product category, outlet type, and consumer preferences also shape sales.
+
+
+  <img width="590" height="390" alt="CDF" src="https://github.com/user-attachments/assets/3ff64cc3-ed23-40b4-b579-081e69beae75" />
+
+**Key Insights:**
+- Most products sell in small amounts (80%) – the majority of items generate relatively low sales.
+- A small group of products sells much more (20%) – only a few items contribute to the highest sales.
+- Sales are not evenly spread – revenue is concentrated in top-performing products, which should get more focus.
 
 ### Model
 

@@ -52,7 +52,53 @@ The problem is that retailers often lack clarity on which products sell best and
 - A small group of products sells much more (20%) – only a few items contribute to the highest sales.
 - Sales are not evenly spread – revenue is concentrated in top-performing products, which should get more focus.
 
-### Model
+### Model:
+
+#### Linear Regression Coefficent
+
+<img width="828" height="547" alt="Lin-Reg Coefficent" src="https://github.com/user-attachments/assets/1c699db5-e026-4132-87e0-24c229cbc8ab" />
+
+Top 3 most impactful features:
+
+1. Item_MRP:
+It is the most influential feature in predicting product sales.
+A higher Maximum Retail Price (MRP) strongly increases predicted sales, meaning expensive products tend to generate more revenues.
+In simple terms: when the MRP increases, sales revenues are expected to rise.
+
+2. x4_Supermarket Type3:
+This indicates outlets categorized as Supermarket Type 3 (likely large or modern stores).
+The strong positive coefficient suggests that sales are higher in these outlet types, possibly due to better visibility, larger customer bases, or wider product availability.
+
+3. x2_OUT027:
+This feature represents a specific outlet (OUT027).
+Its high positive coefficient means that this outlet consistently performs better than others, likely due to location advantages, loyal customers, or better management practices.
+
+#### Tree-Based Model Feature Importance
+
+<img width="854" height="547" alt="RF - Importance" src="https://github.com/user-attachments/assets/0094cbc0-be7a-4346-a1e7-0a2a5b74e490" />
+
+The 5 most important feature:
+
+1. Item_MRP:
+The price of the item (Maximum Retail Price) is the most critical factor influencing sales.
+Higher-priced items are associated with higher predicted sales — the model gives this feature the greatest weight.
+This means price remains the strongest predictor of demand.
+
+2. x4_Grocery Store:
+This feature shows whether the outlet is a grocery store.
+Its strong importance suggests that outlet type significantly affects sales, grocery stores tend to have distinct sales patterns compared to supermarkets, possibly due to smaller size or product mix.
+
+3. x2_OUT027:
+This represents a specific outlet that consistently performs better than others.
+Its importance indicates that store-level characteristics (like location or customer loyalty) strongly impact sales results.
+
+4. x4_Supermarket Type3:
+This represents larger or more modern supermarkets.
+A positive contribution here suggests that Supermarket Type 3 stores achieve higher sales, likely due to better visibility, higher foot traffic, and broader product selection.
+
+5. Outlet_Establishment_Year: 
+This shows how long an outlet has been operating.
+Its lower but still noticeable importance implies that older or more established outlets may have stable customer bases, slightly influencing sales performance.
 
 ### Recommendations:
 
